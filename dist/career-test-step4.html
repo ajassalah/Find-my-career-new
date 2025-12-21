@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/images/college-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Test Results - Find My Career</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" crossorigin href="/assets/style-CJf0Ap4A.css">
+  </head>
+  <body class="career-test-page test-step4-page">
+    <header class="test-header">
+      <div class="test-header-inner">
+        <a class="test-logo" href="index.html">
+          <img src="/images/college-logo.png" alt="Find My Career" />
+          <span class="test-logo-text">
+            <strong>education</strong>
+            <strong>basket</strong>
+          </span>
+        </a>
+        <nav class="test-nav">
+          <a href="#">Resources</a>
+          <a href="#">FAQs</a>
+          <a href="#" class="test-login">
+            Log In <i class="ri-arrow-right-up-line"></i>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="test-results-shell">
+      <section class="results-banner">
+        <div class="results-dots">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <h1>Ajas! These are your results</h1>
+        <a href="#" class="results-share">
+          <i class="ri-share-forward-line"></i>
+          <span class="results-share-text">Share Your Results</span>
+        </a>
+      </section>
+
+      <section class="results-intro">
+        <p class="results-title">Thank you for completing the career test!</p>
+        <p class="results-body">
+          This assessment is designed to help you understand your strengths and
+          align them with potential degrees and careers. Let's take a look at
+          your results. You scored highest in the following two categories,
+          click on the category name to view the degrees and career suggestions
+          that align with your strength.
+        </p>
+      </section>
+
+      <section class="results-pill-row">
+        <button
+          type="button"
+          class="results-pill results-pill--active"
+        >
+          Enterprising And Leadership
+        </button>
+        <button type="button" class="results-pill">Social And Helping</button>
+      </section>
+
+      <section class="results-grid">
+        <article class="results-card">
+          <img
+            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200&auto=format&fit=crop"
+            alt="Event management"
+          />
+          <div class="results-card-body">
+            <h3>Event Management</h3>
+            <p>
+              Focuses on planning, organizing, and managing events, conferences,
+              and exhibitions.
+            </p>
+          </div>
+        </article>
+        <article class="results-card">
+          <img
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop"
+            alt="Management"
+          />
+          <div class="results-card-body">
+            <h3>Management</h3>
+            <p>
+              Focuses on leadership and organizational management for growing
+              teams and operations.
+            </p>
+          </div>
+        </article>
+        <article class="results-card">
+          <img
+            src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop"
+            alt="Business administration"
+          />
+          <div class="results-card-body">
+            <h3>Business Administration</h3>
+            <p>
+              Provides a broad understanding of business principles and
+              management.
+            </p>
+          </div>
+        </article>
+        <article class="results-card">
+          <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
+            alt="Project management"
+          />
+          <div class="results-card-body">
+            <h3>Project Management</h3>
+            <p>
+              Focuses on planning, executing, and managing projects to achieve
+              specific goals.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script>
+      (function () {
+        const pills = document.querySelectorAll(".results-pill");
+        pills.forEach((pill) => {
+          pill.addEventListener("click", () => {
+            pills.forEach((item) => item.classList.remove("results-pill--active"));
+            pill.classList.add("results-pill--active");
+          });
+        });
+
+        const shareButton = document.querySelector(".results-share");
+        const shareText = document.querySelector(".results-share-text");
+        if (shareButton) {
+          shareButton.addEventListener("click", async (event) => {
+            event.preventDefault();
+            const url = window.location.href;
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              try {
+                await navigator.clipboard.writeText(url);
+                if (shareText) {
+                  shareText.textContent = "Link Copied";
+                }
+                shareButton.classList.add("results-share--copied");
+                setTimeout(() => {
+                  if (shareText) {
+                    shareText.textContent = "Share Your Results";
+                  }
+                  shareButton.classList.remove("results-share--copied");
+                }, 2000);
+              } catch (error) {
+                window.prompt("Copy this link:", url);
+              }
+            } else {
+              window.prompt("Copy this link:", url);
+            }
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
