@@ -5,155 +5,496 @@
     <link rel="icon" type="image/png" href="/images/college-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Visit Visa - Find My Career</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    
     <!-- Navbar -->
     <header>
       <div class="container nav-wrapper">
-        <a href="index.html" class="logo"><img src="/images/college-logo.png" alt="Find My Career" style="height: 50px; width: auto;"></a>
-        
+        <a href="index.html" class="logo"
+          ><img
+            src="/images/college-logo.png"
+            alt="Find My Career"
+            style="height: 50px; width: auto"
+        /></a>
+
         <nav>
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="visa-services.html" class="active">Visa Services</a></li>
-            <li><a href="career-path.html">Career Path</a></li>
+            <li>
+              <a href="visa-services.html" class="active">Visa Services</a>
+            </li>
+            <li><a href="career-path.html">Career Paths</a></li>
             <li><a href="our-services.html">Our Services</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="contacts.html">Contacts</a></li>
           </ul>
         </nav>
-        
+
         <div class="nav-actions">
-          <a href="book-consultation.html" class="btn btn-primary">Free Consultation</a>
+          <a href="book-consultation.html" class="btn btn-primary"
+            >Free Consultation</a
+          >
         </div>
+        <button
+          class="mobile-menu-toggle"
+          aria-label="Open menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <i class="ri-menu-line"></i>
+        </button>
       </div>
     </header>
+    <div class="mobile-menu-overlay" aria-hidden="true"></div>
+    <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu-header">
+        <span class="mobile-menu-title">Menu</span>
+        <button class="mobile-menu-close" aria-label="Close menu">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <a href="index.html">Home</a>
+        <a href="visa-services.html">Visa Services</a>
+        <a href="career-path.html">Career Paths</a>
+        <a href="our-services.html">Our Services</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contacts.html">Contacts</a>
+      </nav>
+      <div class="mobile-menu-cta">
+        <a href="book-consultation.html" class="btn btn-primary"
+          >Free Consultation</a
+        >
+      </div>
+    </aside>
 
     <!-- Page Header -->
-    <section class="hero" style="padding: 60px 0; background: #fff;">
+    <section class="hero" style="padding: 60px 0; background: #fff">
       <div class="container">
-         <div style="margin-bottom: 20px; font-weight: 600; color: #555;">
-            <a href="visa-services.html" style="text-decoration: underline;">Visa Services</a> > <span style="color: var(--color-accent); background: #000; color: #fff; padding: 2px 8px;">Visit Visa</span>
-         </div>
-         <div class="section-header" style="text-align: left; margin-bottom: 30px;">
-          <h1 style="font-size: 3.5rem; background: var(--color-accent); display: inline-block; padding: 10px 20px; border: var(--border-width) solid var(--color-border); box-shadow: 8px 8px 0 var(--color-border);">Visit Visa</h1>
-         </div>
-         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
-             <div>
-                <p style="font-size: 1.15rem; margin-bottom: 20px;">
-                    "Your Destination Is Our Responsibility." Whether for tourism, business meetings, or visiting family, obtaining a visit visa requires careful attention to detail. Our specialist visa officers ensure your application meets all scrutiny criteria.
-                </p>
-                <div class="hero-btns">
-                    <a href="#requirements" class="btn btn-primary">Check Requirements</a>
-                </div>
-             </div>
-             <div class="hero-card" style="transform: rotate(1deg); background: var(--color-primary);">
-                <!-- Placeholder for travel/tourism image -->
-                <img src="https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=1374&auto=format&fit=crop" alt="Travel and Tourism" style="border: 2px solid #000;" />
-             </div>
-         </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+          "
+        >
+          <div>
+            <div>
+              <h1
+                style="
+                  font-size: 3.5rem;
+                  background: var(--color-accent);
+                  display: inline-block;
+                  padding: 10px 20px;
+                  border: var(--border-width) solid var(--color-border);
+                  box-shadow: 8px 8px 0 var(--color-border);
+                  color: #ffffff;
+                "
+              >
+                Visit Visa
+              </h1>
+            </div>
+            <div><br /></div>
+            <p style="font-size: 1.15rem; margin-bottom: 20px">
+              "Your Destination Is Our Responsibility." Whether for tourism,
+              business meetings, or visiting family, obtaining a visit visa
+              requires careful attention to detail. Our specialist visa officers
+              ensure your application meets all scrutiny criteria.
+            </p>
+            <br />
+            <br />
+            <div class="hero-btns">
+              <a href="#requirements" class="btn btn-primary"
+                >Check Requirements</a
+              >
+            </div>
+          </div>
+          <div class="hero-card">
+            <!-- Placeholder for travel/tourism image -->
+            <img
+              src="/images/Fmc-Visit-Visa-768x432.jpg"
+              alt="Travel and Tourism"
+            />
+            <div
+              style="
+                margin-top: 15px;
+                text-align: center;
+                font-weight: 700;
+                font-size: 0.9rem;
+              "
+            >
+              There is a stricter scrutiny for visit visas due to a significant
+              movement of the global population seeking economic stability in
+              their lives.
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Purpose Section -->
-    <section class="services" style="background: var(--color-bg); padding: 40px 0;">
-        <div class="container">
-            <div class="services-grid" style="grid-template-columns: repeat(3, 1fr);">
-                <div class="service-card" style="text-align: center; padding: 20px; background: #fff;">
-                    <i class="ri-camera-lens-line" style="font-size: 2rem; color: var(--color-primary);"></i>
-                    <h4 style="margin-top: 10px;">Tourism & Leisure</h4>
-                    <p style="font-size: 0.9rem; margin-top: 5px;">Explore new destinations and cultures.</p>
-                </div>
-                <div class="service-card" style="text-align: center; padding: 20px; background: #fff;">
-                    <i class="ri-briefcase-4-line" style="font-size: 2rem; color: var(--color-secondary); color:#000;"></i>
-                    <h4 style="margin-top: 10px;">Business & Conferencing</h4>
-                    <p style="font-size: 0.9rem; margin-top: 5px;">Attend meetings, conferences, or seminars.</p>
-                </div>
-                <div class="service-card" style="text-align: center; padding: 20px; background: #fff;">
-                    <i class="ri-group-line" style="font-size: 2rem; color: var(--color-tertiary);"></i>
-                    <h4 style="margin-top: 10px;">Family & Social</h4>
-                    <p style="font-size: 0.9rem; margin-top: 5px;">Reunite with family and friends abroad.</p>
-                </div>
-            </div>
+    <section
+      class="services"
+      style="background: var(--color-bg); padding: 40px 0"
+    >
+      <div class="container">
+        <div
+          class="services-grid"
+          style="grid-template-columns: repeat(3, 1fr)"
+        >
+          <div
+            class="service-card"
+            style="text-align: center; padding: 20px; background: #fff"
+          >
+            <i
+              class="ri-camera-lens-line"
+              style="font-size: 2rem; color: var(--color-primary)"
+            ></i>
+            <h4 style="margin-top: 10px">Tourism & Leisure</h4>
+            <p style="font-size: 0.9rem; margin-top: 5px">
+              Explore new destinations and cultures.
+            </p>
+          </div>
+          <div
+            class="service-card"
+            style="text-align: center; padding: 20px; background: #fff"
+          >
+            <i
+              class="ri-briefcase-4-line"
+              style="
+                font-size: 2rem;
+                color: var(--color-secondary);
+                color: #000;
+              "
+            ></i>
+            <h4 style="margin-top: 10px">Business & Conferencing</h4>
+            <p style="font-size: 0.9rem; margin-top: 5px">
+              Attend meetings, conferences, or seminars.
+            </p>
+          </div>
+          <div
+            class="service-card"
+            style="text-align: center; padding: 20px; background: #fff"
+          >
+            <i
+              class="ri-group-line"
+              style="font-size: 2rem; color: var(--color-tertiary)"
+            ></i>
+            <h4 style="margin-top: 10px">Family & Social</h4>
+            <p style="font-size: 0.9rem; margin-top: 5px">
+              Reunite with family and friends abroad.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Requirements Section -->
-    <section class="process" id="requirements" style="background: #fff; border-top: var(--border-width) solid var(--color-border); padding: 80px 0;">
+    <section
+      class="process"
+      id="requirements"
+      style="
+        background: #fff;
+        border-top: var(--border-width) solid var(--color-border);
+        padding: 80px 0;
+      "
+    >
       <div class="container">
         <div class="section-header">
-            <h2>Key Scrutiny Areas</h2>
-            <p>Our officers have identified these 8 key areas that are strictly scrutinized.</p>
+          <h2>Key Scrutiny Areas</h2>
+          <p>
+            Our officers have identified these 8 key areas that are strictly
+            scrutinized.
+          </p>
         </div>
-        
-        <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-            
-            <div class="hero-card" style="background: #fff; transform: none; box-shadow: 6px 6px 0 var(--color-border); align-items: flex-start; text-align: left;">
-                <h4 style="font-size: 1.2rem; color: var(--color-primary); margin-bottom: 10px;">1. Valid Passport</h4>
-                <p>Must be valid for at least 6 months beyond your stay and have sufficient blank pages.</p>
-            </div>
 
-            <div class="hero-card" style="background: #fff; transform: none; box-shadow: 6px 6px 0 var(--color-border); align-items: flex-start; text-align: left;">
-                <h4 style="font-size: 1.2rem; color: var(--color-primary); margin-bottom: 10px;">2. Application Form</h4>
-                <p>Must be accurately and honestly filled out. Errors can lead to immediate rejection.</p>
-            </div>
+        <div
+          class="services-grid"
+          style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))"
+        >
+          <div
+            class="hero-card"
+            style="
+              background: #fff;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              align-items: flex-start;
+              text-align: left;
+            "
+          >
+            <h4
+              style="
+                font-size: 1.2rem;
+                color: var(--color-primary);
+                margin-bottom: 10px;
+              "
+            >
+              1. Valid Passport
+            </h4>
+            <p>
+              Must be valid for at least 6 months beyond your stay and have
+              sufficient blank pages.
+            </p>
+          </div>
 
-            <div class="hero-card" style="background: #fff; transform: none; box-shadow: 6px 6px 0 var(--color-border); align-items: flex-start; text-align: left;">
-                <h4 style="font-size: 1.2rem; color: var(--color-primary); margin-bottom: 10px;">3. Proof of Funds</h4>
-                <p>Evidence (bank statements, sponsorship) that you can support yourself during the stay.</p>
-            </div>
+          <div
+            class="hero-card"
+            style="
+              background: #fff;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              align-items: flex-start;
+              text-align: left;
+            "
+          >
+            <h4
+              style="
+                font-size: 1.2rem;
+                color: var(--color-primary);
+                margin-bottom: 10px;
+              "
+            >
+              2. Application Form
+            </h4>
+            <p>
+              Must be accurately and honestly filled out. Errors can lead to
+              immediate rejection.
+            </p>
+          </div>
 
-            <div class="hero-card" style="background: #fff; transform: none; box-shadow: 6px 6px 0 var(--color-border); align-items: flex-start; text-align: left;">
-                <h4 style="font-size: 1.2rem; color: var(--color-primary); margin-bottom: 10px;">4. Travel Itinerary</h4>
-                <p>Detailed plans including confirmed flight bookings, accommodation, and activities.</p>
-            </div>
+          <div
+            class="hero-card"
+            style="
+              background: #fff;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              align-items: flex-start;
+              text-align: left;
+            "
+          >
+            <h4
+              style="
+                font-size: 1.2rem;
+                color: var(--color-primary);
+                margin-bottom: 10px;
+              "
+            >
+              3. Proof of Funds
+            </h4>
+            <p>
+              Evidence (bank statements, sponsorship) that you can support
+              yourself during the stay.
+            </p>
+          </div>
 
-            <div class="hero-card" style="background: #fff; transform: none; box-shadow: 6px 6px 0 var(--color-border); align-items: flex-start; text-align: left;">
-                <h4 style="font-size: 1.2rem; color: var(--color-primary); margin-bottom: 10px;">5. Immigration Control</h4>
-                <p>Ensuring you have clear intent to return home and will adhere to visa terms.</p>
-            </div>
+          <div
+            class="hero-card"
+            style="
+              background: #fff;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              align-items: flex-start;
+              text-align: left;
+            "
+          >
+            <h4
+              style="
+                font-size: 1.2rem;
+                color: var(--color-primary);
+                margin-bottom: 10px;
+              "
+            >
+              4. Travel Itinerary
+            </h4>
+            <p>
+              Detailed plans including confirmed flight bookings, accommodation,
+              and activities.
+            </p>
+          </div>
 
-            <div class="hero-card" style="background: #fff; transform: none; box-shadow: 6px 6px 0 var(--color-border); align-items: flex-start; text-align: left;">
-                <h4 style="font-size: 1.2rem; color: var(--color-primary); margin-bottom: 10px;">6. Economic Concerns</h4>
-                <p>Vetting to ensure you won't become a burden on public resources (healthcare, welfare).</p>
-            </div>
+          <div
+            class="hero-card"
+            style="
+              background: #fff;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              align-items: flex-start;
+              text-align: left;
+            "
+          >
+            <h4
+              style="
+                font-size: 1.2rem;
+                color: var(--color-primary);
+                margin-bottom: 10px;
+              "
+            >
+              5. Immigration Control
+            </h4>
+            <p>
+              Ensuring you have clear intent to return home and will adhere to
+              visa terms.
+            </p>
+          </div>
 
-            <div class="hero-card" style="background: #fff; transform: none; box-shadow: 6px 6px 0 var(--color-border); align-items: flex-start; text-align: left;">
-                <h4 style="font-size: 1.2rem; color: var(--color-primary); margin-bottom: 10px;">7. Security Risks</h4>
-                <p>Thorough background checks to prevent potential threats or criminal activity.</p>
-            </div>
+          <div
+            class="hero-card"
+            style="
+              background: #fff;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              align-items: flex-start;
+              text-align: left;
+            "
+          >
+            <h4
+              style="
+                font-size: 1.2rem;
+                color: var(--color-primary);
+                margin-bottom: 10px;
+              "
+            >
+              6. Economic Concerns
+            </h4>
+            <p>
+              Vetting to ensure you won't become a burden on public resources
+              (healthcare, welfare).
+            </p>
+          </div>
 
-            <div class="hero-card" style="background: #fff; transform: none; box-shadow: 6px 6px 0 var(--color-border); align-items: flex-start; text-align: left;">
-                <h4 style="font-size: 1.2rem; color: var(--color-primary); margin-bottom: 10px;">8. Visa Abuse</h4>
-                <p>Ensuring the visa is not used for unauthorized work or study purposes.</p>
-            </div>
+          <div
+            class="hero-card"
+            style="
+              background: #fff;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              align-items: flex-start;
+              text-align: left;
+            "
+          >
+            <h4
+              style="
+                font-size: 1.2rem;
+                color: var(--color-primary);
+                margin-bottom: 10px;
+              "
+            >
+              7. Security Risks
+            </h4>
+            <p>
+              Thorough background checks to prevent potential threats or
+              criminal activity.
+            </p>
+          </div>
 
+          <div
+            class="hero-card"
+            style="
+              background: #fff;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              align-items: flex-start;
+              text-align: left;
+            "
+          >
+            <h4
+              style="
+                font-size: 1.2rem;
+                color: var(--color-primary);
+                margin-bottom: 10px;
+              "
+            >
+              8. Visa Abuse
+            </h4>
+            <p>
+              Ensuring the visa is not used for unauthorized work or study
+              purposes.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Refusal Reasons -->
-    <section class="services" style="background: var(--color-tertiary); border-top: var(--border-width) solid var(--color-border);">
-        <div class="container">
-            <div class="section-header">
-                <h2>Common Reasons for Refusal</h2>
-                <p>Avoid these pitfalls to ensure a successful application.</p>
-            </div>
-            <div style="background: #fff; padding: 30px; border: 3px solid #000; box-shadow: 8px 8px 0 #000; border-radius: 8px;">
-                <ul style="list-style: none;">
-                    <li style="margin-bottom: 15px; display: flex; align-items: center;"><i class="ri-close-circle-line" style="color: var(--color-primary); font-size: 1.5rem; margin-right: 15px;"></i> Inaccurate or fraudulent documentation.</li>
-                    <li style="margin-bottom: 15px; display: flex; align-items: center;"><i class="ri-close-circle-line" style="color: var(--color-primary); font-size: 1.5rem; margin-right: 15px;"></i> Insufficient proof of financial means.</li>
-                    <li style="margin-bottom: 15px; display: flex; align-items: center;"><i class="ri-close-circle-line" style="color: var(--color-primary); font-size: 1.5rem; margin-right: 15px;"></i> Unclear travel plans or lack of return ticket.</li>
-                    <li style="display: flex; align-items: center;"><i class="ri-close-circle-line" style="color: var(--color-primary); font-size: 1.5rem; margin-right: 15px;"></i> Perceived risk of overstaying or working illegally.</li>
-                </ul>
-            </div>
+    <section
+      class="services"
+      style="
+        background: var(--color-tertiary);
+        border-top: var(--border-width) solid var(--color-border);
+      "
+    >
+      <div class="container">
+        <div class="section-header">
+          <h2>Common Reasons for Refusal</h2>
+          <p>Avoid these pitfalls to ensure a successful application.</p>
         </div>
+        <div
+          style="
+            background: #fff;
+            padding: 30px;
+            border: 3px solid #000;
+            box-shadow: 8px 8px 0 #000;
+            border-radius: 8px;
+          "
+        >
+          <ul style="list-style: none">
+            <li style="margin-bottom: 15px; display: flex; align-items: center">
+              <i
+                class="ri-close-circle-line"
+                style="
+                  color: var(--color-primary);
+                  font-size: 1.5rem;
+                  margin-right: 15px;
+                "
+              ></i>
+              Inaccurate or fraudulent documentation.
+            </li>
+            <li style="margin-bottom: 15px; display: flex; align-items: center">
+              <i
+                class="ri-close-circle-line"
+                style="
+                  color: var(--color-primary);
+                  font-size: 1.5rem;
+                  margin-right: 15px;
+                "
+              ></i>
+              Insufficient proof of financial means.
+            </li>
+            <li style="margin-bottom: 15px; display: flex; align-items: center">
+              <i
+                class="ri-close-circle-line"
+                style="
+                  color: var(--color-primary);
+                  font-size: 1.5rem;
+                  margin-right: 15px;
+                "
+              ></i>
+              Unclear travel plans or lack of return ticket.
+            </li>
+            <li style="display: flex; align-items: center">
+              <i
+                class="ri-close-circle-line"
+                style="
+                  color: var(--color-primary);
+                  font-size: 1.5rem;
+                  margin-right: 15px;
+                "
+              ></i>
+              Perceived risk of overstaying or working illegally.
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-                <footer class="footer-basket">
+    <footer class="footer-basket">
       <div class="footer-basket-inner">
         <div class="footer-basket-left">
           <div class="footer-brand-row">
@@ -162,42 +503,52 @@
               alt="Find My Career logo"
               class="footer-basket-logo"
             />
+            <p class="footer-blurb">
+              In an ever evolving competitive jobs market career guidance
+              counselling has emerged as a very important player in the
+              realisation of dreams and ambitions
+            </p>
           </div>
-          <p class="footer-blurb">In an ever evolving competitive jobs market career guidance counselling has <br>  emerged as a very important player in the realisation of dreams and ambitions <br>   sometimes built on sacrifices of immense proportions. Find my career is today<br>leading the way in overseas graduate placements with seventeen years of experience  and know how at their fingertips.</p>
+
           <div class="footer-socials">
-            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
-            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
-          </div>
-          <div class="footer-copy">
-            Copyright 2025 Find My Career. All Rights Reserved.
+            <a href="#" aria-label="Instagram"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="ri-facebook-fill"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
           </div>
         </div>
         <div class="footer-basket-right">
           <div class="footer-menu">
             <div class="footer-menu-col">
-              <h4>Career Test</h4>
+              <h3>Career Test</h3>
               <ul>
                 <li><a href="visa-services.html">Visa Services</a></li>
-                <li><a href="career-path.html">Career Path</a></li>
+                <li><a href="career-path.html">Career Paths</a></li>
                 <li><a href="our-services.html">Our Services</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
               </ul>
             </div>
             <div class="footer-menu-col">
-              <h4>Helpful Links</h4>
+              <h3>Helpful Links</h3>
               <ul>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms &amp; Conditions</a></li>
               </ul>
             </div>
-                        <div class="footer-menu-col stay-connected">
-              <h4>Stay Connected with Us</h4>
-                            <ul class="footer-contact-list">
+            <div class="footer-menu-col stay-connected">
+              <h3>Stay Connected with Us</h3>
+              <ul class="footer-contact-list">
                 <li>
                   <i class="ri-map-pin-2-fill"></i>
                   <span>No. 18, Beltona Lane, Colombo - 04 Sri Lanka</span>
+                  <br />
+                  <span>4DeMontfort Street, 2nd Floor Leicester LE1 7GA</span>
                 </li>
                 <li>
                   <i class="ri-phone-fill"></i>
@@ -211,113 +562,16 @@
                   <i class="ri-mail-open-fill"></i>
                   <span>info@findmycareer.org.uk</span>
                 </li>
-                <li>
-                  <i class="ri-timer-2-fill"></i>
-                  <span>Mon to Fri - 10:00am to 6:00pm Sat - 10.00am to 2.00pm (Sunday Closed)</span>
-                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </footer>
-<section class="footer-duplicate">
-  <div class="footer-duplicate-inner">
-    <div class="footer-duplicate-left">
-      <div class="footer-duplicate-brand">
-        <div class="footer-duplicate-columns">
-          <div class="footer-duplicate-menu">
-            <h4>Career Test</h4>
-            <ul>
-              <li><a href="visa-services.html">Visa Services</a></li>
-              <li><a href="career-path.html">Career Path</a></li>
-              <li><a href="our-services.html">Our Services</a></li>
-              <li><a href="about-us.html">About Us</a></li>
-              <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-          </div>
-          <div class="footer-duplicate-menu footer-duplicate-stay">
-            <h4>Stay Connected with Us</h4>
-            <ul class="footer-contact-list">
-              <li>
-                <i class="ri-map-pin-line"></i>
-                <span>No. 18, Beltona Lane, Colombo - 04 Sri Lanka</span>
-              </li>
-              <li>
-                <i class="ri-phone-line"></i>
-                <span>+94 117 221 192</span>
-              </li>
-              <li>
-                <i class="ri-global-line"></i>
-                <span>findmycareer.org.uk</span>
-              </li>
-              <li>
-                <i class="ri-mail-line"></i>
-                <span>info@findmycareer.org.uk</span>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-duplicate-menu">
-            <h4>Helpful Links</h4>
-            <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms &amp; Conditions</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <div class="footer-copy-row">
+      Copyright 2025 Find My Career. All Rights Reserved.
     </div>
-    <div class="footer-duplicate-right">
-      <div class="footer-duplicate-grid">
-        <div class="footer-duplicate-col"></div>
-        <div class="footer-duplicate-col"></div>
-      </div>
-    </div>
-  </div>
-</section>
 
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

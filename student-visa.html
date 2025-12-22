@@ -5,160 +5,376 @@
     <link rel="icon" type="image/png" href="/images/college-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Visa - Find My Career</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    
     <!-- Navbar -->
     <header>
       <div class="container nav-wrapper">
-        <a href="index.html" class="logo"><img src="/images/college-logo.png" alt="Find My Career" style="height: 50px; width: auto;"></a>
-        
+        <a href="index.html" class="logo"
+          ><img
+            src="/images/college-logo.png"
+            alt="Find My Career"
+            style="height: 50px; width: auto"
+        /></a>
+
         <nav>
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="visa-services.html" class="active">Visa Services</a></li>
-            <li><a href="career-path.html">Career Path</a></li>
+            <li>
+              <a href="visa-services.html" class="active">Visa Services</a>
+            </li>
+            <li><a href="career-path.html">Career Paths</a></li>
             <li><a href="our-services.html">Our Services</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="contacts.html">Contacts</a></li>
           </ul>
         </nav>
-        
+
         <div class="nav-actions">
-          <a href="book-consultation.html" class="btn btn-primary">Free Consultation</a>
+          <a href="book-consultation.html" class="btn btn-primary"
+            >Free Consultation</a
+          >
         </div>
+        <button
+          class="mobile-menu-toggle"
+          aria-label="Open menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <i class="ri-menu-line"></i>
+        </button>
       </div>
     </header>
+    <div class="mobile-menu-overlay" aria-hidden="true"></div>
+    <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu-header">
+        <span class="mobile-menu-title">Menu</span>
+        <button class="mobile-menu-close" aria-label="Close menu">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <a href="index.html">Home</a>
+        <a href="visa-services.html">Visa Services</a>
+        <a href="career-path.html">Career Paths</a>
+        <a href="our-services.html">Our Services</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contacts.html">Contacts</a>
+      </nav>
+      <div class="mobile-menu-cta">
+        <a href="book-consultation.html" class="btn btn-primary"
+          >Free Consultation</a
+        >
+      </div>
+    </aside>
 
     <!-- Page Header -->
-    <section class="hero" style="padding: 60px 0; background: #fff;">
+    <section class="hero" style="padding: 60px 0; background: #fff">
       <div class="container">
-         <div style="margin-bottom: 20px; font-weight: 600; color: #555;">
-            <a href="visa-services.html" style="text-decoration: underline;">Visa Services</a> > <span style="color: var(--color-primary);">Student Visa</span>
-         </div>
-         <div class="section-header" style="text-align: left; margin-bottom: 30px;">
-          <h1 style="font-size: 3.5rem; background: var(--color-tertiary); display: inline-block; padding: 10px 20px; border: var(--border-width) solid var(--color-border); box-shadow: 8px 8px 0 var(--color-border);">Student Visa</h1>
-         </div>
-         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
-             <div>
-                <p style="font-size: 1.15rem; margin-bottom: 20px;">
-                    We specialize in helping aspiring students achieve their dreams of studying abroad. Our comprehensive Student Visa Services are designed to guide you through every step of the visa application process, ensuring a smooth and successful journey to your educational goals.
-                </p>
-                <div class="hero-btns">
-                    <a href="#requirements" class="btn btn-secondary">Check Requirements</a>
-                </div>
-             </div>
-             <div class="hero-card" style="transform: rotate(1deg); background: var(--color-secondary);">
-                <!-- Placeholder for the students with flags image -->
-                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1471&auto=format&fit=crop" alt="International Students" style="border: 2px solid #000;" />
-             </div>
-         </div>
+        <div
+          class="section-header"
+          style="text-align: left; margin-bottom: 30px"
+        >
+          <h1
+            style="
+              font-size: 3.5rem;
+              background: var(--color-tertiary);
+              display: inline-block;
+              padding: 10px 20px;
+              border: var(--border-width) solid var(--color-border);
+              box-shadow: 8px 8px 0 var(--color-border);
+            "
+          >
+            Student Visa
+          </h1>
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+          "
+        >
+          <div>
+            <p style="font-size: 1.15rem; margin-bottom: 20px">
+              We specialize in helping aspiring students achieve their dreams of
+              studying abroad. Our comprehensive Student Visa Services are
+              designed to guide you through every step of the visa application
+              process, ensuring a smooth and successful journey to your
+              educational goals.
+            </p>
+            <div class="hero-btns">
+              <a href="#requirements" class="btn btn-secondary"
+                >Check Requirements</a
+              >
+            </div>
+          </div>
+          <div class="hero-card">
+            <!-- Placeholder for the students with flags image -->
+            <img
+              src="/images/Student-visa-copy-768x432.jpg"
+              alt="International Students"
+            />
+            <div
+              style="
+                margin-top: 15px;
+                text-align: center;
+                font-weight: 700;
+                font-size: 0.95rem;
+                line-height: 1.4;
+              "
+            >
+              We have a team of highly seasoned personnel dedicated to ensuring
+              students sail smoothly through the visa process.
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Requirements Section -->
-    <section class="services" id="requirements" style="background: var(--color-bg); border-top: var(--border-width) solid var(--color-border);">
+    <section
+      class="services"
+      id="requirements"
+      style="
+        background: var(--color-bg);
+        border-top: var(--border-width) solid var(--color-border);
+      "
+    >
       <div class="container">
         <div class="section-header">
-            <h2>Visa Requirements</h2>
-            <p style="margin-top: 10px;">Key requirements for obtaining a student visa for higher education abroad.</p>
+          <h2>Visa Requirements</h2>
+          <p style="margin-top: 10px">
+            Key requirements for obtaining a student visa for higher education
+            abroad.
+          </p>
         </div>
-        
-        <div class="services-grid" style="grid-template-columns: 1fr;">
-            
-            <!-- Requirement 1 -->
-            <div class="step-card" style="align-items: flex-start;">
-                <div class="step-number" style="color: var(--color-primary);">01</div>
-                <div>
-                    <h3>Valid Passport</h3>
-                    <p>A valid passport is a primary requirement. The validity requirement varies by country.</p>
-                    <ul style="list-style: disc; margin-left: 20px; margin-top: 10px;">
-                        <li><strong>Blank Pages:</strong> Ensure your passport has at least two blank pages for visa stamping.</li>
-                        <li><strong>Copies:</strong> Submitting copies of expired passports is often mandatory.</li>
-                    </ul>
-                </div>
-            </div>
 
-            <!-- Requirement 2 -->
-            <div class="step-card" style="align-items: flex-start;">
-                <div class="step-number" style="color: var(--color-secondary); -webkit-text-stroke: 1px black;">02</div>
-                <div>
-                    <h3>Student Proof (Admission Confirmation)</h3>
-                    <p>Proof of being a bona fide student is the second most important document needed.</p>
-                    <ul style="list-style: disc; margin-left: 20px; margin-top: 10px;">
-                        <li>You must provide proof of admission to a recognized educational institution in the destination country.</li>
-                        <li>This usually comes in the form of an Offer Letter or CAS (Confirmation of Acceptance for Studies).</li>
-                    </ul>
-                </div>
+        <div class="services-grid" style="grid-template-columns: 1fr">
+          <!-- Requirement 1 -->
+          <div class="step-card" style="align-items: flex-start">
+            <div class="step-number" style="color: var(--color-primary)">
+              01
             </div>
-
-             <!-- Requirement 3 -->
-             <div class="step-card" style="align-items: flex-start;">
-                <div class="step-number" style="color: var(--color-tertiary); -webkit-text-stroke: 1px black;">03</div>
-                <div>
-                    <h3>Proof of Funds</h3>
-                    <p>You must demonstrate that you have the financial means to cover tuition and living costs.</p>
-                    <ul style="list-style: disc; margin-left: 20px; margin-top: 10px;">
-                        <li><strong>Fixed Amounts:</strong> Many countries have specific financial requirements or fixed amounts you must show.</li>
-                        <li><strong>Living Costs:</strong> Some countries, especially in Europe, have minimum living cost requirements based on government regulations.</li>
-                    </ul>
-                </div>
+            <div>
+              <h3>Valid Passport</h3>
+              <p>
+                A valid passport is a primary requirement. The validity
+                requirement varies by country.
+              </p>
+              <ul style="list-style: disc; margin-left: 20px; margin-top: 10px">
+                <li>
+                  <strong>Blank Pages:</strong> Ensure your passport has at
+                  least two blank pages for visa stamping.
+                </li>
+                <li>
+                  <strong>Copies:</strong> Submitting copies of expired
+                  passports is often mandatory.
+                </li>
+              </ul>
             </div>
+          </div>
 
-            <!-- Requirement 4 -->
-            <div class="step-card" style="align-items: flex-start;">
-                <div class="step-number" style="color: var(--color-accent); -webkit-text-stroke: 1px #fff;">04</div>
-                <div>
-                    <h3>Proficiency in Language</h3>
-                    <p>Proficiency in the instructional language of the country is often required.</p>
-                    <ul style="list-style: disc; margin-left: 20px; margin-top: 10px;">
-                        <li><strong>English:</strong> For English-speaking countries, scores from IELTS, TOEFL, or PTE are typically required.</li>
-                        <li><strong>Note:</strong> Requirements vary significantly by country and university.</li>
-                    </ul>
-                </div>
+          <!-- Requirement 2 -->
+          <div class="step-card" style="align-items: flex-start">
+            <div
+              class="step-number"
+              style="
+                color: var(--color-secondary);
+                -webkit-text-stroke: 1px black;
+              "
+            >
+              02
             </div>
+            <div>
+              <h3>Student Proof (Admission Confirmation)</h3>
+              <p>
+                Proof of being a bona fide student is the second most important
+                document needed.
+              </p>
+              <ul style="list-style: disc; margin-left: 20px; margin-top: 10px">
+                <li>
+                  You must provide proof of admission to a recognized
+                  educational institution in the destination country.
+                </li>
+                <li>
+                  This usually comes in the form of an Offer Letter or CAS
+                  (Confirmation of Acceptance for Studies).
+                </li>
+              </ul>
+            </div>
+          </div>
 
+          <!-- Requirement 3 -->
+          <div class="step-card" style="align-items: flex-start">
+            <div
+              class="step-number"
+              style="
+                color: var(--color-tertiary);
+                -webkit-text-stroke: 1px black;
+              "
+            >
+              03
+            </div>
+            <div>
+              <h3>Proof of Funds</h3>
+              <p>
+                You must demonstrate that you have the financial means to cover
+                tuition and living costs.
+              </p>
+              <ul style="list-style: disc; margin-left: 20px; margin-top: 10px">
+                <li>
+                  <strong>Fixed Amounts:</strong> Many countries have specific
+                  financial requirements or fixed amounts you must show.
+                </li>
+                <li>
+                  <strong>Living Costs:</strong> Some countries, especially in
+                  Europe, have minimum living cost requirements based on
+                  government regulations.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Requirement 4 -->
+          <div class="step-card" style="align-items: flex-start">
+            <div
+              class="step-number"
+              style="color: var(--color-accent); -webkit-text-stroke: 1px #fff"
+            >
+              04
+            </div>
+            <div>
+              <h3>Proficiency in Language</h3>
+              <p>
+                Proficiency in the instructional language of the country is
+                often required.
+              </p>
+              <ul style="list-style: disc; margin-left: 20px; margin-top: 10px">
+                <li>
+                  <strong>English:</strong> For English-speaking countries,
+                  scores from IELTS, TOEFL, or PTE are typically required.
+                </li>
+                <li>
+                  <strong>Note:</strong> Requirements vary significantly by
+                  country and university.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Requirement 4 -->
+          <div class="step-card" style="align-items: flex-start">
+            <div
+              class="step-number"
+              style="color: var(--color-accent); -webkit-text-stroke: 1px #fff"
+            >
+              05
+            </div>
+            <div>
+              <h3>Additional Requirements</h3>
+
+              <ul style="list-style: disc; margin-left: 20px; margin-top: 10px">
+                <li>
+                  Some countries may have additional requirements such as health
+                  test results, blocked accounts, or statements of purpose
+                  (SOPs) for visa applications. It is crucial to check the
+                  specific requirements of the destination country before
+                  applying.
+                </li>
+                <li>
+                  Carefully review all the requirements and ensure that you have
+                  the necessary documentation to avoid any delays or issues in
+                  obtaining your student visa.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Common Rejection Reasons -->
-    <section class="process" style="background: #fff; border-top: var(--border-width) solid var(--color-border);">
-        <div class="container">
-            <div class="section-header">
-                <h2>Avoid Rejection</h2>
-                <p>Common reasons for visa refusal and how we help you avoid them.</p>
-            </div>
-
-            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-                <div class="hero-card" style="background: #FFECEC; transform: none; box-shadow: 6px 6px 0 var(--color-border);">
-                    <div style="font-size: 2rem; margin-bottom: 10px; color: var(--color-primary);"><i class="ri-error-warning-line"></i></div>
-                    <h4>Insufficient Funds</h4>
-                    <p style="font-size: 0.9rem;">Rejection due to inadequate bank balance or unexplained large deposits.</p>
-                </div>
-
-                <div class="hero-card" style="background: #E8F4F8; transform: none; box-shadow: 6px 6px 0 var(--color-border);">
-                    <div style="font-size: 2rem; margin-bottom: 10px; color: var(--color-accent);"><i class="ri-file-search-line"></i></div>
-                    <h4>Improper Documentation</h4>
-                    <p style="font-size: 0.9rem;">Using fake documents or lacking proper certification/attestation.</p>
-                </div>
-
-                <div class="hero-card" style="background: #FFF8E1; transform: none; box-shadow: 6px 6px 0 var(--color-border);">
-                    <div style="font-size: 2rem; margin-bottom: 10px; color: #FFA000;"><i class="ri-flight-land-line"></i></div>
-                    <h4>Lack of Intent to Return</h4>
-                    <p style="font-size: 0.9rem;">Failure to convince the officer of stronger ties to your home country than the destination.</p>
-                </div>
-            </div>
-            
-            <div style="text-align: center; margin-top: 50px;">
-                <a href="index.html#consultation" class="btn btn-primary" style="padding: 15px 40px;">Get Expert Guidance</a>
-            </div>
+    <section
+      class="process"
+      style="
+        background: #fff;
+        border-top: var(--border-width) solid var(--color-border);
+      "
+    >
+      <div class="container">
+        <div class="section-header">
+          <h2>Avoid Rejection</h2>
+          <p>Common reasons for visa refusal and how we help you avoid them.</p>
         </div>
+
+        <div
+          class="services-grid"
+          style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))"
+        >
+          <div class="hero-card step-card-effect" style="background: #ffecec">
+            <div
+              style="
+                font-size: 2rem;
+                margin-bottom: 10px;
+                color: var(--color-primary);
+              "
+            >
+              <i class="ri-error-warning-line"></i>
+            </div>
+            <h4>Insufficient Funds</h4>
+            <p style="font-size: 0.9rem">
+              Rejection due to inadequate bank balance or unexplained large
+              deposits.
+            </p>
+          </div>
+
+          <div class="hero-card step-card-effect" style="background: #e8f4f8">
+            <div
+              style="
+                font-size: 2rem;
+                margin-bottom: 10px;
+                color: var(--color-accent);
+              "
+            >
+              <i class="ri-file-search-line"></i>
+            </div>
+            <h4>Improper Documentation</h4>
+            <p style="font-size: 0.9rem">
+              Using fake documents or lacking proper certification/attestation.
+            </p>
+          </div>
+
+          <div class="hero-card step-card-effect" style="background: #fff8e1">
+            <div style="font-size: 2rem; margin-bottom: 10px; color: #ffa000">
+              <i class="ri-flight-land-line"></i>
+            </div>
+            <h4>Lack of Intent to Return</h4>
+            <p style="font-size: 0.9rem">
+              Failure to convince the officer of stronger ties to your home
+              country than the destination.
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px">
+          <a
+            href="index.html#consultation"
+            class="btn btn-primary"
+            style="padding: 15px 40px"
+            >Get Expert Guidance</a
+          >
+        </div>
+      </div>
     </section>
 
-                <footer class="footer-basket">
+    <footer class="footer-basket">
       <div class="footer-basket-inner">
         <div class="footer-basket-left">
           <div class="footer-brand-row">
@@ -167,42 +383,52 @@
               alt="Find My Career logo"
               class="footer-basket-logo"
             />
+            <p class="footer-blurb">
+              In an ever evolving competitive jobs market career guidance
+              counselling has emerged as a very important player in the
+              realisation of dreams and ambitions
+            </p>
           </div>
-          <p class="footer-blurb">In an ever evolving competitive jobs market career guidance counselling has <br>  emerged as a very important player in the realisation of dreams and ambitions <br>   sometimes built on sacrifices of immense proportions. Find my career is today<br>leading the way in overseas graduate placements with seventeen years of experience  and know how at their fingertips.</p>
+
           <div class="footer-socials">
-            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
-            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
-          </div>
-          <div class="footer-copy">
-            Copyright 2025 Find My Career. All Rights Reserved.
+            <a href="#" aria-label="Instagram"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="ri-facebook-fill"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
           </div>
         </div>
         <div class="footer-basket-right">
           <div class="footer-menu">
             <div class="footer-menu-col">
-              <h4>Career Test</h4>
+              <h3>Career Test</h3>
               <ul>
                 <li><a href="visa-services.html">Visa Services</a></li>
-                <li><a href="career-path.html">Career Path</a></li>
+                <li><a href="career-path.html">Career Paths</a></li>
                 <li><a href="our-services.html">Our Services</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
               </ul>
             </div>
             <div class="footer-menu-col">
-              <h4>Helpful Links</h4>
+              <h3>Helpful Links</h3>
               <ul>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms &amp; Conditions</a></li>
               </ul>
             </div>
-                        <div class="footer-menu-col stay-connected">
-              <h4>Stay Connected with Us</h4>
-                            <ul class="footer-contact-list">
+            <div class="footer-menu-col stay-connected">
+              <h3>Stay Connected with Us</h3>
+              <ul class="footer-contact-list">
                 <li>
                   <i class="ri-map-pin-2-fill"></i>
                   <span>No. 18, Beltona Lane, Colombo - 04 Sri Lanka</span>
+                  <br />
+                  <span>4DeMontfort Street, 2nd Floor Leicester LE1 7GA</span>
                 </li>
                 <li>
                   <i class="ri-phone-fill"></i>
@@ -216,113 +442,16 @@
                   <i class="ri-mail-open-fill"></i>
                   <span>info@findmycareer.org.uk</span>
                 </li>
-                <li>
-                  <i class="ri-timer-2-fill"></i>
-                  <span>Mon to Fri - 10:00am to 6:00pm Sat - 10.00am to 2.00pm (Sunday Closed)</span>
-                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </footer>
-<section class="footer-duplicate">
-  <div class="footer-duplicate-inner">
-    <div class="footer-duplicate-left">
-      <div class="footer-duplicate-brand">
-        <div class="footer-duplicate-columns">
-          <div class="footer-duplicate-menu">
-            <h4>Career Test</h4>
-            <ul>
-              <li><a href="visa-services.html">Visa Services</a></li>
-              <li><a href="career-path.html">Career Path</a></li>
-              <li><a href="our-services.html">Our Services</a></li>
-              <li><a href="about-us.html">About Us</a></li>
-              <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-          </div>
-          <div class="footer-duplicate-menu footer-duplicate-stay">
-            <h4>Stay Connected with Us</h4>
-            <ul class="footer-contact-list">
-              <li>
-                <i class="ri-map-pin-line"></i>
-                <span>No. 18, Beltona Lane, Colombo - 04 Sri Lanka</span>
-              </li>
-              <li>
-                <i class="ri-phone-line"></i>
-                <span>+94 117 221 192</span>
-              </li>
-              <li>
-                <i class="ri-global-line"></i>
-                <span>findmycareer.org.uk</span>
-              </li>
-              <li>
-                <i class="ri-mail-line"></i>
-                <span>info@findmycareer.org.uk</span>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-duplicate-menu">
-            <h4>Helpful Links</h4>
-            <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms &amp; Conditions</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <div class="footer-copy-row">
+      Copyright 2025 Find My Career. All Rights Reserved.
     </div>
-    <div class="footer-duplicate-right">
-      <div class="footer-duplicate-grid">
-        <div class="footer-duplicate-col"></div>
-        <div class="footer-duplicate-col"></div>
-      </div>
-    </div>
-  </div>
-</section>
 
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
