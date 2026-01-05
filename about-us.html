@@ -27,7 +27,13 @@
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="visa-services.html">Visa Services</a></li>
-            <li><a href="career-path.html">Career Paths</a></li>
+                        <li class="dropdown">
+              <a href="career-path.html">Career Paths <i class="ri-arrow-down-s-line"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="career-path.html">Career Test</a></li>
+                <li><a href="blog.html">Blog Section</a></li>
+              </ul>
+            </li>
             <li><a href="our-services.html">Our Services</a></li>
             <li><a href="about-us.html" class="active">About Us</a></li>
             <li><a href="contacts.html">Contacts</a></li>
@@ -61,6 +67,7 @@
         <a href="index.html">Home</a>
         <a href="visa-services.html">Visa Services</a>
         <a href="career-path.html">Career Paths</a>
+        <a href="blog.html" style="margin-left: 20px; font-size: 0.9em; border-left: 2px solid var(--color-border); padding-left: 10px;">Blog Section</a>
         <a href="our-services.html">Our Services</a>
         <a href="about-us.html">About Us</a>
         <a href="contacts.html">Contacts</a>
@@ -149,7 +156,7 @@
       style="background: var(--color-bg); padding: 80px 0"
     >
       <div class="container">
-        <div class="services-grid" style="grid-template-columns: 1fr 1fr">
+        <div class="services-grid">
           <!-- Mission -->
           <div
             class="service-card"
@@ -225,7 +232,6 @@
 
         <div
           class="services-grid about-services-grid"
-          style="grid-template-columns: repeat(3, 1fr)"
         >
           <div
             class="hero-card"
@@ -345,71 +351,57 @@
       </div>
     </section>
 
-    <!-- Stats Section -->
-    <section
-      class="services"
-      style="background: #000; color: #fff; padding: 60px 0"
-    >
+    <!-- Our Journey & Team Section -->
+    <section class="services" style="background: #fff; padding: 80px 0; border-top: var(--border-width) solid var(--color-border);">
       <div class="container">
-        <div
-          style="
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            text-align: center;
-            flex-wrap: wrap;
-            gap: 40px;
-          "
-        >
-          <div>
-            <div
-              style="
-                font-size: 4rem;
-                font-weight: 900;
-                color: var(--color-primary);
-                text-shadow: 4px 4px 0 #fff;
-              "
-            >
-              17+
-            </div>
-            <div style="font-size: 1.2rem; margin-top: 10px">
-              Years Experience
-            </div>
-          </div>
-
-          <div>
-            <div
-              style="
-                font-size: 4rem;
-                font-weight: 900;
-                color: var(--color-secondary);
-                text-shadow: 4px 4px 0 #fff;
-              "
-            >
-              20+
-            </div>
-            <div style="font-size: 1.2rem; margin-top: 10px">
-              Dedicated Experts
-            </div>
-          </div>
-
-          <div>
-            <div
-              style="
-                font-size: 4rem;
-                font-weight: 900;
-                color: var(--color-tertiary);
-                text-shadow: 4px 4px 0 #fff;
-              "
-            >
-              1000s
-            </div>
-            <div style="font-size: 1.2rem; margin-top: 10px">
-              Successful Students
-            </div>
-          </div>
+        <div style="max-width: 900px; margin: 0 auto; text-align: left;">
+          <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: var(--color-text);">Our Journey</h2>
+          <p style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 50px; color: var(--color-text);">
+            Founded in 2007, Find My Career was born out of a passion for education and a commitment to guiding students through the complex process of international university applications. Over the past 17 years, we have successfully assisted thousands of students in securing placements at prestigious universities around the world.
+          </p>
+    
+          <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: var(--color-text);">Our Team</h2>
+          <p style="font-size: 1.15rem; line-height: 1.8; color: var(--color-text);">
+            At the heart of Find My Career is a team of 20 dedicated, highly skilled professionals. Our team brings together a wealth of experience and expertise in international education, university admissions, and student counseling. Each member of our team is committed to providing exceptional service and personalized attention to every student we work with.
+          </p>
         </div>
       </div>
+    </section>
+
+    <!-- Stats Section (Black Banner) -->
+    <section style="background: #000; color: #fff; padding: 100px 0; border-top: var(--border-width) solid var(--color-border); border-bottom: var(--border-width) solid var(--color-border); position: relative; overflow: hidden;">
+        <div class="container">
+          <div style="display: flex; justify-content: space-around; align-items: center; text-align: center; flex-wrap: wrap; gap: 40px;">
+            
+            <!-- Stat 1 -->
+            <div>
+              <div style="position: relative; font-size: 5rem; font-weight: 900; color: #fff; line-height: 1;">
+                <span style="position: absolute; top: 4px; left: 4px; color: #ff0055; z-index: 0; width: 100%;">17+</span>
+                <span style="position: relative; z-index: 1;">17+</span>
+              </div>
+              <div style="font-size: 1.2rem; margin-top: 15px; font-weight: 500;">Years Experience</div>
+            </div>
+    
+            <!-- Stat 2 -->
+            <div>
+               <div style="position: relative; font-size: 5rem; font-weight: 900; color: #fff; line-height: 1;">
+                <span style="position: absolute; top: 4px; left: 4px; color: #ffcc00; z-index: 0; width: 100%;">20+</span>
+                <span style="position: relative; z-index: 1;">20+</span>
+              </div>
+              <div style="font-size: 1.2rem; margin-top: 15px; font-weight: 500;">Dedicated Experts</div>
+            </div>
+    
+            <!-- Stat 3 -->
+            <div>
+               <div style="position: relative; font-size: 5rem; font-weight: 900; color: #fff; line-height: 1;">
+                <span style="position: absolute; top: 4px; left: 4px; color: #00ccff; z-index: 0; width: 100%;">1000s</span>
+                <span style="position: relative; z-index: 1;">1000s</span>
+              </div>
+              <div style="font-size: 1.2rem; margin-top: 15px; font-weight: 500;">Successful Students</div>
+            </div>
+    
+          </div>
+        </div>
     </section>
 
     <!-- Director's Quote -->
@@ -450,7 +442,11 @@
             <p class="footer-blurb">
               In an ever evolving competitive jobs market career guidance
               counselling has emerged as a very important player in the
-              realisation of dreams and ambitions
+              realisation of dreams and ambitions sometimes built on sacrifices
+              of immense proportions. Find my career is today leading the way in
+              overseas graduate placements with seventeen years of experience
+              and knowhow at their fingertips.Call us and find out how we could
+              help you in your career path
             </p>
           </div>
 
@@ -469,7 +465,7 @@
         <div class="footer-basket-right">
           <div class="footer-menu">
             <div class="footer-menu-col">
-              <h3>Career Test</h3>
+              <h3>Quick Selection</h3>
               <ul>
                 <li><a href="visa-services.html">Visa Services</a></li>
                 <li><a href="career-path.html">Career Paths</a></li>
