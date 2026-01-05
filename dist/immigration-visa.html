@@ -5,140 +5,375 @@
     <link rel="icon" type="image/png" href="/images/college-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Migration Visa - Find My Career</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" crossorigin href="/assets/style-CJf0Ap4A.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <script type="module" crossorigin src="/assets/main-BTnVuppY.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-Wp6WBXVO.css">
   </head>
   <body>
-    
     <!-- Navbar -->
     <header>
       <div class="container nav-wrapper">
-        <a href="index.html" class="logo"><img src="/images/college-logo.png" alt="Find My Career" style="height: 50px; width: auto;"></a>
-        
+        <a href="index.html" class="logo"
+          ><img
+            src="/images/college-logo.png"
+            alt="Find My Career"
+            style="height: 50px; width: auto"
+        /></a>
+
         <nav>
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="visa-services.html" class="active">Visa Services</a></li>
-            <li><a href="career-path.html">Career Path</a></li>
+            <li>
+              <a href="visa-services.html" class="active">Visa Services</a>
+            </li>
+                        <li class="dropdown">
+              <a href="career-path.html">Career Paths <i class="ri-arrow-down-s-line"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="career-path.html">Career Test</a></li>
+                <li><a href="blog.html">Blog Section</a></li>
+              </ul>
+            </li>
             <li><a href="our-services.html">Our Services</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="contacts.html">Contacts</a></li>
           </ul>
         </nav>
-        
+
         <div class="nav-actions">
-          <a href="book-consultation.html" class="btn btn-primary">Free Consultation</a>
+          <a href="book-consultation.html" class="btn btn-primary"
+            >Free Consultation</a
+          >
         </div>
+        <button
+          class="mobile-menu-toggle"
+          aria-label="Open menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <i class="ri-menu-line"></i>
+        </button>
       </div>
     </header>
+    <div class="mobile-menu-overlay" aria-hidden="true"></div>
+    <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu-header">
+        <span class="mobile-menu-title">Menu</span>
+        <button class="mobile-menu-close" aria-label="Close menu">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <a href="index.html">Home</a>
+        <a href="visa-services.html">Visa Services</a>
+        <a href="career-path.html">Career Paths</a>
+        <a href="blog.html" style="margin-left: 20px; font-size: 0.9em; border-left: 2px solid var(--color-border); padding-left: 10px;">Blog Section</a>
+        <a href="our-services.html">Our Services</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contacts.html">Contacts</a>
+      </nav>
+      <div class="mobile-menu-cta">
+        <a href="book-consultation.html" class="btn btn-primary"
+          >Free Consultation</a
+        >
+      </div>
+    </aside>
 
     <!-- Page Header -->
-    <section class="hero" style="padding: 60px 0; background: #fff;">
+    <section class="hero" style="padding: 60px 0; background: #fff">
       <div class="container">
-         <div style="margin-bottom: 20px; font-weight: 600; color: #555;">
-            <a href="visa-services.html" style="text-decoration: underline;">Visa Services</a> > <span style="background: var(--color-tertiary); padding: 2px 8px;">Migration Visa</span>
-         </div>
-         <div class="section-header" style="text-align: left; margin-bottom: 30px;">
-          <h1 style="font-size: 3.5rem; background: var(--color-tertiary); display: inline-block; padding: 10px 20px; border: var(--border-width) solid var(--color-border); box-shadow: 8px 8px 0 var(--color-border);">Migration Visa</h1>
-         </div>
-         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
-             <div>
-                <p style="font-size: 1.15rem; margin-bottom: 20px;">
-                    Migration visas facilitate the entry of individuals for long-term residency or permanent settlement, contributing to the host country's growth and stability. We assist you in navigating the complex pathways to your new home.
-                </p>
-                <div class="hero-btns">
-                    <a href="#reasons" class="btn btn-primary">Why Migrate?</a>
-                </div>
-             </div>
-             <div class="hero-card" style="transform: rotate(1deg); background: var(--color-secondary);">
-                <!-- Placeholder for family/settlement image -->
-                <img src="https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?q=80&w=1470&auto=format&fit=crop" alt="Family Settlement" style="border: 2px solid #000;" />
-             </div>
-         </div>
+        <div
+          class="section-header"
+          style="text-align: left; margin-bottom: 30px"
+        >
+          <h1
+            style="
+              font-size: 3.5rem;
+              background: var(--color-tertiary);
+              display: inline-block;
+              padding: 10px 20px;
+              border: var(--border-width) solid var(--color-border);
+              box-shadow: 8px 8px 0 var(--color-border);
+            "
+          >
+            Migration Visa
+          </h1>
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+          "
+        >
+          <div>
+            <p style="font-size: 1.15rem; margin-bottom: 20px">
+              Migration visas facilitate the entry of individuals for long-term
+              residency or permanent settlement, contributing to the host
+              country's growth and stability. We assist you in navigating the
+              complex pathways to your new home.
+            </p>
+            <div class="hero-btns">
+              <a href="#reasons" class="btn btn-primary">Why Migrate?</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <!-- Placeholder for family/settlement image -->
+            <img
+              src="/images/optimistic-mother-looking-lovingly-at-her-daughter-2023-11-27-05-01-22-utc-768x512.jpg"
+              alt="Family Settlement"
+            />
+            <div
+              style="
+                margin-top: 15px;
+                text-align: center;
+                font-weight: 700;
+                font-size: 0.9rem;
+              "
+            >
+              Migration visas aim to achieve a balanced and strategic approach
+              to immigration.
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Key Reasons Section -->
-    <section class="process" id="reasons" style="background: var(--color-bg); padding: 80px 0;">
+    <section
+      class="process"
+      id="reasons"
+      style="background: var(--color-bg); padding: 80px 0"
+    >
       <div class="container">
         <div class="section-header">
-            <h2>Why Migrate?</h2>
-            <p>Countries issue migration visas to meet various economic, demographic, and social objectives.</p>
+          <h2>Why Migrate?</h2>
+          <p>
+            Countries issue migration visas to meet various economic,
+            demographic, and social objectives.
+          </p>
         </div>
-        
-        <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-            
-            <div class="hero-card" style="background: #fff; transform: none; box-shadow: 6px 6px 0 var(--color-border); align-items: flex-start; text-align: left;">
-                <div style="font-size: 2rem; color: var(--color-primary); margin-bottom: 15px;"><i class="ri-bar-chart-groupped-line"></i></div>
-                <h4 style="font-size: 1.2rem; margin-bottom: 10px;">Economic Benefits</h4>
-                <p>Help address labor market needs by filling skill gaps, fostering innovation, and boosting economic growth.</p>
-            </div>
 
-            <div class="hero-card" style="background: #fff; transform: none; box-shadow: 6px 6px 0 var(--color-border); align-items: flex-start; text-align: left;">
-                <div style="font-size: 2rem; color: var(--color-secondary); color:#000; margin-bottom: 15px;"><i class="ri-user-add-line"></i></div>
-                <h4 style="font-size: 1.2rem; margin-bottom: 10px;">Demographic Goals</h4>
-                <p>Mitigate the impacts of an aging population and support population growth through young, skilled migrants.</p>
+        <div
+          class="services-grid"
+          style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))"
+        >
+          <div
+            class="hero-card"
+            style="
+              background: #fff;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              align-items: flex-start;
+              text-align: left;
+            "
+          >
+            <div
+              style="
+                font-size: 2rem;
+                color: var(--color-primary);
+                margin-bottom: 15px;
+              "
+            >
+              <i class="ri-bar-chart-groupped-line"></i>
             </div>
+            <h4 style="font-size: 1.2rem; margin-bottom: 10px">
+              Economic Benefits
+            </h4>
+            <p>
+              Help address labor market needs by filling skill gaps, fostering
+              innovation, and boosting economic growth.
+            </p>
+          </div>
 
-            <div class="hero-card" style="background: #fff; transform: none; box-shadow: 6px 6px 0 var(--color-border); align-items: flex-start; text-align: left;">
-                <div style="font-size: 2rem; color: var(--color-accent); margin-bottom: 15px;"><i class="ri-heart-pulse-line"></i></div>
-                <h4 style="font-size: 1.2rem; margin-bottom: 10px;">Humanitarian Aid</h4>
-                <p>Provide asylum to refugees and facilitate family reunification, reflecting a commitment to human rights.</p>
+          <div
+            class="hero-card"
+            style="
+              background: #fff;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              align-items: flex-start;
+              text-align: left;
+            "
+          >
+            <div
+              style="
+                font-size: 2rem;
+                color: var(--color-secondary);
+                color: #000;
+                margin-bottom: 15px;
+              "
+            >
+              <i class="ri-user-add-line"></i>
             </div>
+            <h4 style="font-size: 1.2rem; margin-bottom: 10px">
+              Demographic Goals
+            </h4>
+            <p>
+              Mitigate the impacts of an aging population and support population
+              growth through young, skilled migrants.
+            </p>
+          </div>
 
-            <div class="hero-card" style="background: #fff; transform: none; box-shadow: 6px 6px 0 var(--color-border); align-items: flex-start; text-align: left;">
-                <div style="font-size: 2rem; color: var(--color-tertiary); margin-bottom: 15px;"><i class="ri-book-mark-line"></i></div>
-                <h4 style="font-size: 1.2rem; margin-bottom: 10px;">Educational Goals</h4>
-                <p>Attract international students and researchers to enhance innovation and global academic standing.</p>
+          <div
+            class="hero-card"
+            style="
+              background: #fff;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              align-items: flex-start;
+              text-align: left;
+            "
+          >
+            <div
+              style="
+                font-size: 2rem;
+                color: var(--color-accent);
+                margin-bottom: 15px;
+              "
+            >
+              <i class="ri-heart-pulse-line"></i>
             </div>
+            <h4 style="font-size: 1.2rem; margin-bottom: 10px">
+              Humanitarian Aid
+            </h4>
+            <p>
+              Provide asylum to refugees and facilitate family reunification,
+              reflecting a commitment to human rights.
+            </p>
+          </div>
 
-            <div class="hero-card" style="background: #fff; transform: none; box-shadow: 6px 6px 0 var(--color-border); align-items: flex-start; text-align: left;">
-                <div style="font-size: 2rem; color: var(--color-primary); margin-bottom: 15px;"><i class="ri-shake-hands-line"></i></div>
-                <h4 style="font-size: 1.2rem; margin-bottom: 10px;">Diplomatic Ties</h4>
-                <p>Strengthen diplomatic relationships and cultural exchange, exercising "soft power" globally.</p>
+          <div
+            class="hero-card"
+            style="
+              background: #fff;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              align-items: flex-start;
+              text-align: left;
+            "
+          >
+            <div
+              style="
+                font-size: 2rem;
+                color: var(--color-tertiary);
+                margin-bottom: 15px;
+              "
+            >
+              <i class="ri-book-mark-line"></i>
             </div>
+            <h4 style="font-size: 1.2rem; margin-bottom: 10px">
+              Educational Goals
+            </h4>
+            <p>
+              Attract international students and researchers to enhance
+              innovation and global academic standing.
+            </p>
+          </div>
 
-             <div class="hero-card" style="background: #fff; transform: none; box-shadow: 6px 6px 0 var(--color-border); align-items: flex-start; text-align: left;">
-                <div style="font-size: 2rem; color: #FFA000; margin-bottom: 15px;"><i class="ri-community-line"></i></div>
-                <h4 style="font-size: 1.2rem; margin-bottom: 10px;">Development Goals</h4>
-                <p>Promote regional development by encouraging settlement in less populated or developing areas.</p>
+          <div
+            class="hero-card"
+            style="
+              background: #fff;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              align-items: flex-start;
+              text-align: left;
+            "
+          >
+            <div
+              style="
+                font-size: 2rem;
+                color: var(--color-primary);
+                margin-bottom: 15px;
+              "
+            >
+              <i class="ri-shake-hands-line"></i>
             </div>
+            <h4 style="font-size: 1.2rem; margin-bottom: 10px">
+              Diplomatic Ties
+            </h4>
+            <p>
+              Strengthen diplomatic relationships and cultural exchange,
+              exercising "soft power" globally.
+            </p>
+          </div>
 
+          <div
+            class="hero-card"
+            style="
+              background: #fff;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              align-items: flex-start;
+              text-align: left;
+            "
+          >
+            <div style="font-size: 2rem; color: #ffa000; margin-bottom: 15px">
+              <i class="ri-community-line"></i>
+            </div>
+            <h4 style="font-size: 1.2rem; margin-bottom: 10px">
+              Development Goals
+            </h4>
+            <p>
+              Promote regional development by encouraging settlement in less
+              populated or developing areas.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Support Section -->
-    <section class="services" style="background: #fff; border-top: var(--border-width) solid var(--color-border);">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Expert Guidance</h2>
-                <p>Navigating migration laws can be daunting. Here is how we help:</p>
-            </div>
-            <div class="process-steps">
-                <div class="step-card">
-                    <div class="service-icon" style="background: var(--color-secondary); color: #000;">
-                        <i class="ri-search-eye-line"></i>
-                    </div>
-                    <div>
-                        <h3>Comprehensive Research</h3>
-                        <p>We navigate specific visa category requirements using official government sources to find the best path for you.</p>
-                    </div>
-                </div>
-                 <div class="step-card">
-                    <div class="service-icon" style="background: var(--color-primary);">
-                        <i class="ri-file-list-3-line"></i>
-                    </div>
-                    <div>
-                        <h3>Precision Documentation</h3>
-                        <p>We assist in gathering and perfectly preparing all necessary records, ID proofs, and financial statements.</p>
-                    </div>
-                </div>
-            </div>
+    <section
+      class="services"
+      style="
+        background: #fff;
+        border-top: var(--border-width) solid var(--color-border);
+      "
+    >
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Expert Guidance</h2>
+          <p>Navigating migration laws can be daunting. Here is how we help:</p>
         </div>
+        <div class="process-steps">
+          <div class="step-card">
+            <div
+              class="service-icon"
+              style="background: var(--color-secondary); color: #000"
+            >
+              <i class="ri-search-eye-line"></i>
+            </div>
+            <div>
+              <h3>Comprehensive Research</h3>
+              <p>
+                We navigate specific visa category requirements using official
+                government sources to find the best path for you.
+              </p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="service-icon" style="background: var(--color-primary)">
+              <i class="ri-file-list-3-line"></i>
+            </div>
+            <div>
+              <h3>Precision Documentation</h3>
+              <p>
+                We assist in gathering and perfectly preparing all necessary
+                records, ID proofs, and financial statements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-                <footer class="footer-basket">
+    <footer class="footer-basket">
       <div class="footer-basket-inner">
         <div class="footer-basket-left">
           <div class="footer-brand-row">
@@ -147,42 +382,52 @@
               alt="Find My Career logo"
               class="footer-basket-logo"
             />
+            <p class="footer-blurb">
+              In an ever evolving competitive jobs market career guidance
+              counselling has emerged as a very important player in the
+              realisation of dreams and ambitions
+            </p>
           </div>
-          <p class="footer-blurb">In an ever evolving competitive jobs market career guidance counselling has <br>  emerged as a very important player in the realisation of dreams and ambitions <br>   sometimes built on sacrifices of immense proportions. Find my career is today<br>leading the way in overseas graduate placements with seventeen years of experience  and know how at their fingertips.</p>
+
           <div class="footer-socials">
-            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
-            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
-          </div>
-          <div class="footer-copy">
-            Copyright 2025 Find My Career. All Rights Reserved.
+            <a href="#" aria-label="Instagram"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="ri-facebook-fill"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
           </div>
         </div>
         <div class="footer-basket-right">
           <div class="footer-menu">
             <div class="footer-menu-col">
-              <h4>Career Test</h4>
+              <h3>Career Test</h3>
               <ul>
                 <li><a href="visa-services.html">Visa Services</a></li>
-                <li><a href="career-path.html">Career Path</a></li>
+                <li><a href="career-path.html">Career Paths</a></li>
                 <li><a href="our-services.html">Our Services</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
               </ul>
             </div>
             <div class="footer-menu-col">
-              <h4>Helpful Links</h4>
+              <h3>Helpful Links</h3>
               <ul>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms &amp; Conditions</a></li>
               </ul>
             </div>
-                        <div class="footer-menu-col stay-connected">
-              <h4>Stay Connected with Us</h4>
-                            <ul class="footer-contact-list">
+            <div class="footer-menu-col stay-connected">
+              <h3>Stay Connected with Us</h3>
+              <ul class="footer-contact-list">
                 <li>
                   <i class="ri-map-pin-2-fill"></i>
                   <span>No. 18, Beltona Lane, Colombo - 04 Sri Lanka</span>
+                  <br />
+                  <span>4DeMontfort Street, 2nd Floor Leicester LE1 7GA</span>
                 </li>
                 <li>
                   <i class="ri-phone-fill"></i>
@@ -196,113 +441,15 @@
                   <i class="ri-mail-open-fill"></i>
                   <span>info@findmycareer.org.uk</span>
                 </li>
-                <li>
-                  <i class="ri-timer-2-fill"></i>
-                  <span>Mon to Fri - 10:00am to 6:00pm Sat - 10.00am to 2.00pm (Sunday Closed)</span>
-                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </footer>
-<section class="footer-duplicate">
-  <div class="footer-duplicate-inner">
-    <div class="footer-duplicate-left">
-      <div class="footer-duplicate-brand">
-        <div class="footer-duplicate-columns">
-          <div class="footer-duplicate-menu">
-            <h4>Career Test</h4>
-            <ul>
-              <li><a href="visa-services.html">Visa Services</a></li>
-              <li><a href="career-path.html">Career Path</a></li>
-              <li><a href="our-services.html">Our Services</a></li>
-              <li><a href="about-us.html">About Us</a></li>
-              <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-          </div>
-          <div class="footer-duplicate-menu footer-duplicate-stay">
-            <h4>Stay Connected with Us</h4>
-            <ul class="footer-contact-list">
-              <li>
-                <i class="ri-map-pin-line"></i>
-                <span>No. 18, Beltona Lane, Colombo - 04 Sri Lanka</span>
-              </li>
-              <li>
-                <i class="ri-phone-line"></i>
-                <span>+94 117 221 192</span>
-              </li>
-              <li>
-                <i class="ri-global-line"></i>
-                <span>findmycareer.org.uk</span>
-              </li>
-              <li>
-                <i class="ri-mail-line"></i>
-                <span>info@findmycareer.org.uk</span>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-duplicate-menu">
-            <h4>Helpful Links</h4>
-            <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms &amp; Conditions</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <div class="footer-copy-row">
+      Copyright 2025 Find My Career. All Rights Reserved.
     </div>
-    <div class="footer-duplicate-right">
-      <div class="footer-duplicate-grid">
-        <div class="footer-duplicate-col"></div>
-        <div class="footer-duplicate-col"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
+
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

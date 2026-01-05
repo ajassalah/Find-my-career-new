@@ -9,21 +9,17 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" crossorigin href="/assets/style-CJf0Ap4A.css">
+    <script type="module" crossorigin src="/assets/main-BTnVuppY.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-Wp6WBXVO.css">
   </head>
   <body class="career-test-page test-step4-page">
     <header class="test-header">
       <div class="test-header-inner">
         <a class="test-logo" href="index.html">
           <img src="/images/college-logo.png" alt="Find My Career" />
-          <span class="test-logo-text">
-            <strong>education</strong>
-            <strong>basket</strong>
-          </span>
         </a>
-        <nav class="test-nav">
-          <a href="#">Resources</a>
-          <a href="#">FAQs</a>
+                        <nav class="test-nav">
+<a href="career-path.html#career-test-faq">FAQs</a>
           <a href="#" class="test-login">
             Log In <i class="ri-arrow-right-up-line"></i>
           </a>
@@ -51,7 +47,7 @@
           <span></span>
           <span></span>
         </div>
-        <h1>Ajas! These are your results</h1>
+        <h1>These are your results</h1>
         <a href="#" class="results-share">
           <i class="ri-share-forward-line"></i>
           <span class="results-share-text">Share Your Results</span>
@@ -136,6 +132,16 @@
     </main>
     <script>
       (function () {
+        const resultsHeading = document.querySelector(".results-banner h1");
+        const savedName = localStorage.getItem("careerTestName");
+        if (resultsHeading) {
+          if (savedName && savedName.trim()) {
+            resultsHeading.textContent = `${savedName.trim()}! These are your results`;
+          } else {
+            resultsHeading.textContent = "These are your results";
+          }
+        }
+
         const pills = document.querySelectorAll(".results-pill");
         pills.forEach((pill) => {
           pill.addEventListener("click", () => {
@@ -173,5 +179,14 @@
         }
       })();
     </script>
-  </body>
+</body>
 </html>
+
+
+
+
+
+
+
+
+

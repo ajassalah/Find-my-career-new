@@ -9,21 +9,21 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" crossorigin href="/assets/style-CJf0Ap4A.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.5/build/css/intlTelInput.css"
+    />
+    <script type="module" crossorigin src="/assets/main-BTnVuppY.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-Wp6WBXVO.css">
   </head>
   <body class="career-test-page test-step2-page">
     <header class="test-header">
       <div class="test-header-inner">
         <a class="test-logo" href="index.html">
           <img src="/images/college-logo.png" alt="Find My Career" />
-          <span class="test-logo-text">
-            <strong>education</strong>
-            <strong>basket</strong>
-          </span>
         </a>
         <nav class="test-nav">
-          <a href="#">Resources</a>
-          <a href="#">FAQs</a>
+          <a href="career-path.html#career-test-faq">FAQs</a>
           <a href="#" class="test-login">
             Log In <i class="ri-arrow-right-up-line"></i>
           </a>
@@ -47,7 +47,12 @@
           <form class="test-form" action="career-test-step3.html">
             <label>
               Full Name
-              <input type="text" placeholder="ex: Jane John" required />
+              <input
+                id="test-full-name"
+                type="text"
+                placeholder="ex: Jane John"
+                required
+              />
             </label>
             <label>
               Email
@@ -55,50 +60,61 @@
             </label>
             <label>
               Phone Number
-              <div class="test-input-wrap">
-                <span class="test-flag">+94</span>
-                <input type="tel" placeholder="+94 117 221 192" required />
-              </div>
+              <input
+                id="test-phone"
+                type="tel"
+                placeholder="012 345 679"
+                required
+              />
             </label>
             <label>
               Date of Birth
               <div class="test-input-wrap">
-                <input type="text" placeholder="DD-MM-YYYY" required />
-                <i class="ri-calendar-2-line"></i>
+                <input type="date" class="test-date-input" required />
+                <button type="button" class="test-calendar-btn" aria-label="Open calendar">
+                  <i class="ri-calendar-2-line"></i>
+                </button>
               </div>
             </label>
 
-            <button type="submit" class="test-submit-btn">
-              Take the test
-            </button>
+            <button type="submit" class="test-submit-btn">Take the test</button>
           </form>
         </div>
       </section>
-
-      <aside class="test-step2-right">
-        <div class="test-dot-grid">
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-          <span class="test-dot"></span>
-        </div>
-      </aside>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.5/build/js/intlTelInput.min.js"></script>
+    <script>
+      const phoneInput = document.querySelector("#test-phone");
+      if (phoneInput && window.intlTelInput) {
+        window.intlTelInput(phoneInput, {
+          initialCountry: "lk",
+          separateDialCode: true,
+          utilsScript:
+            "https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.5/build/js/utils.js",
+        });
+      }
+
+      const testForm = document.querySelector(".test-form");
+      const fullNameInput = document.querySelector("#test-full-name");
+      if (testForm && fullNameInput) {
+        testForm.addEventListener("submit", () => {
+          const trimmedName = fullNameInput.value.trim();
+          if (trimmedName) {
+            localStorage.setItem("careerTestName", trimmedName);
+          }
+        });
+      }
+
+      const dateInput = document.querySelector(".test-date-input");
+      const calendarBtn = document.querySelector(".test-calendar-btn");
+      if (dateInput && calendarBtn) {
+        calendarBtn.addEventListener("click", () => {
+          dateInput.focus();
+          if (dateInput.showPicker) {
+            dateInput.showPicker();
+          }
+        });
+      }
+    </script>
   </body>
 </html>

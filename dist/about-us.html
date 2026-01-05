@@ -5,170 +5,433 @@
     <link rel="icon" type="image/png" href="/images/college-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - Find My Career</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" crossorigin href="/assets/style-CJf0Ap4A.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <script type="module" crossorigin src="/assets/main-BTnVuppY.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-Wp6WBXVO.css">
   </head>
   <body>
-    
     <!-- Navbar -->
     <header>
       <div class="container nav-wrapper">
-        <a href="index.html" class="logo"><img src="/images/college-logo.png" alt="Find My Career" style="height: 50px; width: auto;"></a>
-        
+        <a href="index.html" class="logo"
+          ><img
+            src="/images/college-logo.png"
+            alt="Find My Career"
+            style="height: 50px; width: auto"
+        /></a>
+
         <nav>
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="visa-services.html">Visa Services</a></li>
-            <li><a href="career-path.html">Career Path</a></li>
+                        <li class="dropdown">
+              <a href="career-path.html">Career Paths <i class="ri-arrow-down-s-line"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="career-path.html">Career Test</a></li>
+                <li><a href="blog.html">Blog Section</a></li>
+              </ul>
+            </li>
             <li><a href="our-services.html">Our Services</a></li>
             <li><a href="about-us.html" class="active">About Us</a></li>
             <li><a href="contacts.html">Contacts</a></li>
           </ul>
         </nav>
-        
+
         <div class="nav-actions">
-          <a href="book-consultation.html" class="btn btn-primary">Free Consultation</a>
+          <a href="book-consultation.html" class="btn btn-primary"
+            >Free Consultation</a
+          >
         </div>
+        <button
+          class="mobile-menu-toggle"
+          aria-label="Open menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <i class="ri-menu-line"></i>
+        </button>
       </div>
     </header>
+    <div class="mobile-menu-overlay" aria-hidden="true"></div>
+    <aside class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu-header">
+        <span class="mobile-menu-title">Menu</span>
+        <button class="mobile-menu-close" aria-label="Close menu">
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+      <nav class="mobile-menu-nav">
+        <a href="index.html">Home</a>
+        <a href="visa-services.html">Visa Services</a>
+        <a href="career-path.html">Career Paths</a>
+        <a href="blog.html" style="margin-left: 20px; font-size: 0.9em; border-left: 2px solid var(--color-border); padding-left: 10px;">Blog Section</a>
+        <a href="our-services.html">Our Services</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contacts.html">Contacts</a>
+      </nav>
+      <div class="mobile-menu-cta">
+        <a href="book-consultation.html" class="btn btn-primary"
+          >Free Consultation</a
+        >
+      </div>
+    </aside>
 
     <!-- Page Header -->
-    <section class="hero" style="padding: 60px 0; background: #fff;">
+    <section class="hero" style="padding: 60px 0; background: #fff">
       <div class="container">
-         <div class="section-header" style="text-align: left; margin-bottom: 30px;">
-          <h1 style="font-size: 3.5rem; background: var(--color-primary); display: inline-block; padding: 10px 20px; border: var(--border-width) solid var(--color-border); box-shadow: 8px 8px 0 var(--color-border);">Who We Are</h1>
-         </div>
-         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
-             <div>
-                <p style="font-size: 1.15rem; margin-bottom: 20px;">
-                    Welcome to Find My Career, your trusted partner in overseas graduate university placements. With over <strong>17 years of experience</strong>, we have established ourselves as a leading provider of comprehensive services designed to help students realize their dreams of studying abroad.
-                </p>
-                <div class="hero-btns">
-                    <a href="#vision" class="btn btn-secondary">Our Vision</a>
-                    <a href="#values" class="btn btn-accent" style="margin-left: 10px; box-shadow: 4px 4px 0 var(--color-border); border: 3px solid #000; padding: 12px 24px; text-decoration: none; font-weight: 700; color: #000; background: #fff;">Our Values</a>
-                </div>
-             </div>
-             <div class="hero-card" style="transform: rotate(1deg); background: var(--color-tertiary);">
-                 <!-- Placeholder for team/university image -->
-                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1470&auto=format&fit=crop" alt="University Campus" style="border: 2px solid #000;" />
-             </div>
-         </div>
+        <div
+          class="section-header"
+          style="text-align: left; margin-bottom: 30px"
+        >
+          <h1
+            style="
+              font-size: 3.5rem;
+              background: var(--color-primary);
+              display: inline-block;
+              padding: 10px 20px;
+              border: var(--border-width) solid var(--color-border);
+              box-shadow: 8px 8px 0 var(--color-border);
+            "
+          >
+            Who We Are
+          </h1>
+        </div>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+          "
+        >
+          <div>
+            <p style="font-size: 1.15rem; margin-bottom: 20px">
+              Welcome to Find My Career, your trusted partner in overseas
+              graduate university placements. With over
+              <strong>17 years of experience</strong>, we have established
+              ourselves as a leading provider of comprehensive services designed
+              to help students realize their dreams of studying abroad.
+            </p>
+            <div class="hero-btns">
+              <a href="#vision" class="btn btn-secondary">Our Vision</a>
+              <a
+                href="#values"
+                class="btn btn-accent"
+                style="
+                  margin-left: 10px;
+                  box-shadow: 4px 4px 0 var(--color-border);
+                  border: 3px solid #000;
+                  padding: 12px 24px;
+                  text-decoration: none;
+                  font-weight: 700;
+                  color: #000;
+                  background: #fff;
+                "
+                >Our Values</a
+              >
+            </div>
+          </div>
+          <div
+            class="hero-card"
+            style="transform: rotate(1deg); background: var(--color-tertiary)"
+          >
+            <!-- Placeholder for team/university image -->
+            <img
+              src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1470&auto=format&fit=crop"
+              alt="University Campus"
+              style="border: 2px solid #000"
+            />
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Mission & Vision Section -->
-    <section class="services" id="vision" style="background: var(--color-bg); padding: 80px 0;">
-        <div class="container">
-            <div class="services-grid" style="grid-template-columns: 1fr 1fr;">
-                
-                <!-- Mission -->
-                <div class="service-card" style="background: #fff; text-align: left; padding: 40px;">
-                    <div style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 20px; display: inline-block; background: #000; color: var(--color-secondary); padding: 5px;"><i class="ri-rocket-line"></i></div>
-                    <h3 style="font-size: 2rem;">Our Mission</h3>
-                    <p style="margin-top: 15px; font-size: 1.1rem; line-height: 1.6;">
-                        To empower students by providing expert guidance and personalized support throughout their journey to higher education abroad. We strive to make the process seamless and stress-free, ensuring that each student finds the right university that aligns with their academic goals and career aspirations.
-                    </p>
-                </div>
-
-                <!-- Vision -->
-                <div class="service-card" style="background: #fff; text-align: left; padding: 40px;">
-                    <div style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: 20px; display: inline-block; background: #000; color: var(--color-primary); padding: 5px;"><i class="ri-eye-line"></i></div>
-                    <h3 style="font-size: 2rem;">Our Vision</h3>
-                    <p style="margin-top: 15px; font-size: 1.1rem; line-height: 1.6;">
-                        To be the leading global provider of educational consultancy services, fostering a future of global leaders. We envision a world where every student has the guidance, resources, and support they need to transform their academic dreams into reality.
-                    </p>
-                </div>
-
+    <section
+      class="services"
+      id="vision"
+      style="background: var(--color-bg); padding: 80px 0"
+    >
+      <div class="container">
+        <div class="services-grid">
+          <!-- Mission -->
+          <div
+            class="service-card"
+            style="background: #fff; text-align: left; padding: 40px"
+          >
+            <div
+              style="
+                font-size: 2.5rem;
+                color: var(--color-secondary);
+                margin-bottom: 20px;
+                display: inline-block;
+                background: #000;
+                color: var(--color-secondary);
+                padding: 5px;
+              "
+            >
+              <i class="ri-rocket-line"></i>
             </div>
+            <h3 style="font-size: 2rem">Our Mission</h3>
+            <p style="margin-top: 15px; font-size: 1.1rem; line-height: 1.6">
+              To empower students by providing expert guidance and personalized
+              support throughout their journey to higher education abroad. We
+              strive to make the process seamless and stress-free, ensuring that
+              each student finds the right university that aligns with their
+              academic goals and career aspirations.
+            </p>
+          </div>
+
+          <!-- Vision -->
+          <div
+            class="service-card"
+            style="background: #fff; text-align: left; padding: 40px"
+          >
+            <div
+              style="
+                font-size: 2.5rem;
+                color: var(--color-primary);
+                margin-bottom: 20px;
+                display: inline-block;
+                background: #000;
+                color: var(--color-primary);
+                padding: 5px;
+              "
+            >
+              <i class="ri-eye-line"></i>
+            </div>
+            <h3 style="font-size: 2rem">Our Vision</h3>
+            <p style="margin-top: 15px; font-size: 1.1rem; line-height: 1.6">
+              To be the leading global provider of educational consultancy
+              services, fostering a future of global leaders. We envision a
+              world where every student has the guidance, resources, and support
+              they need to transform their academic dreams into reality.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Why Choose Us / Values -->
-    <section class="process" id="values" style="background: #fff; border-top: var(--border-width) solid var(--color-border);">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why Choose Us</h2>
-                <p>What sets us apart in the competitive world of career guidance.</p>
-            </div>
-            
-            <div class="services-grid about-services-grid" style="grid-template-columns: repeat(3, 1fr);">
-                
-                <div class="hero-card" style="background: #E0F7FA; transform: none; box-shadow: 6px 6px 0 var(--color-border); text-align: center;">
-                    <i class="ri-user-star-line" style="font-size: 2rem; margin-bottom: 10px;"></i>
-                    <h4>Expert Guidance</h4>
-                    <p style="font-size: 0.9rem;">Engage with our consultants and leave confident and assured.</p>
-                </div>
-
-                <div class="hero-card" style="background: #FCE4EC; transform: none; box-shadow: 6px 6px 0 var(--color-border); text-align: center;">
-                    <i class="ri-translate-2" style="font-size: 2rem; margin-bottom: 10px;"></i>
-                    <h4>Multilingual Support</h4>
-                    <p style="font-size: 0.9rem;">Services available in English, Sinhala, and Tamil.</p>
-                </div>
-
-                <div class="hero-card" style="background: #FFF8E1; transform: none; box-shadow: 6px 6px 0 var(--color-border); text-align: center;">
-                    <i class="ri-shield-check-line" style="font-size: 2rem; margin-bottom: 10px;"></i>
-                    <h4>Trust & Security</h4>
-                    <p style="font-size: 0.9rem;">Uncompromised trustworthy service with complete confidentiality.</p>
-                </div>
-
-                <div class="hero-card" style="background: #E8F5E9; transform: none; box-shadow: 6px 6px 0 var(--color-border); text-align: center;">
-                    <i class="ri-line-chart-line" style="font-size: 2rem; margin-bottom: 10px;"></i>
-                    <h4>Transparent Process</h4>
-                    <p style="font-size: 0.9rem;">Monitor progress every step of the way through our transparent process.</p>
-                </div>
-
-                <div class="hero-card" style="background: #F3E5F5; transform: none; box-shadow: 6px 6px 0 var(--color-border); text-align: center;">
-                    <i class="ri-book-open-line" style="font-size: 2rem; margin-bottom: 10px;"></i>
-                    <h4>Tuition Support</h4>
-                    <p style="font-size: 0.9rem;">Support for IELTS and other relevant academic requirements.</p>
-                </div>
-
-                <div class="hero-card" style="background: #EFEBE9; transform: none; box-shadow: 6px 6px 0 var(--color-border); text-align: center;">
-                    <i class="ri-lightbulb-line" style="font-size: 2rem; margin-bottom: 10px;"></i>
-                    <h4>Empowerment</h4>
-                    <p style="font-size: 0.9rem;">Stimulating applicant knowledge for informed decision-making.</p>
-                </div>
-
-            </div>
+    <section
+      class="process"
+      id="values"
+      style="
+        background: #fff;
+        border-top: var(--border-width) solid var(--color-border);
+      "
+    >
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Choose Us</h2>
+          <p>What sets us apart in the competitive world of career guidance.</p>
         </div>
+
+        <div
+          class="services-grid about-services-grid"
+        >
+          <div
+            class="hero-card"
+            style="
+              background: #e0f7fa;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              text-align: center;
+            "
+          >
+            <i
+              class="ri-user-star-line"
+              style="font-size: 2rem; margin-bottom: 10px"
+            ></i>
+            <h4>Expert Guidance</h4>
+            <p style="font-size: 0.9rem">
+              Engage with our consultants and leave confident and assured.
+            </p>
+          </div>
+
+          <div
+            class="hero-card"
+            style="
+              background: #fce4ec;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              text-align: center;
+            "
+          >
+            <i
+              class="ri-translate-2"
+              style="font-size: 2rem; margin-bottom: 10px"
+            ></i>
+            <h4>Multilingual Support</h4>
+            <p style="font-size: 0.9rem">
+              Services available in English, Sinhala, and Tamil.
+            </p>
+          </div>
+
+          <div
+            class="hero-card"
+            style="
+              background: #fff8e1;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              text-align: center;
+            "
+          >
+            <i
+              class="ri-shield-check-line"
+              style="font-size: 2rem; margin-bottom: 10px"
+            ></i>
+            <h4>Trust & Security</h4>
+            <p style="font-size: 0.9rem">
+              Uncompromised trustworthy service with complete confidentiality.
+            </p>
+          </div>
+
+          <div
+            class="hero-card"
+            style="
+              background: #e8f5e9;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              text-align: center;
+            "
+          >
+            <i
+              class="ri-line-chart-line"
+              style="font-size: 2rem; margin-bottom: 10px"
+            ></i>
+            <h4>Transparent Process</h4>
+            <p style="font-size: 0.9rem">
+              Monitor progress every step of the way through our transparent
+              process.
+            </p>
+          </div>
+
+          <div
+            class="hero-card"
+            style="
+              background: #f3e5f5;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              text-align: center;
+            "
+          >
+            <i
+              class="ri-book-open-line"
+              style="font-size: 2rem; margin-bottom: 10px"
+            ></i>
+            <h4>Tuition Support</h4>
+            <p style="font-size: 0.9rem">
+              Support for IELTS and other relevant academic requirements.
+            </p>
+          </div>
+
+          <div
+            class="hero-card"
+            style="
+              background: #efebe9;
+              transform: none;
+              box-shadow: 6px 6px 0 var(--color-border);
+              text-align: center;
+            "
+          >
+            <i
+              class="ri-lightbulb-line"
+              style="font-size: 2rem; margin-bottom: 10px"
+            ></i>
+            <h4>Empowerment</h4>
+            <p style="font-size: 0.9rem">
+              Stimulating applicant knowledge for informed decision-making.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="services" style="background: #000; color: #fff; padding: 60px 0;">
+    <!-- Our Journey & Team Section -->
+    <section class="services" style="background: #fff; padding: 80px 0; border-top: var(--border-width) solid var(--color-border);">
+      <div class="container">
+        <div style="max-width: 900px; margin: 0 auto; text-align: left;">
+          <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: var(--color-text);">Our Journey</h2>
+          <p style="font-size: 1.15rem; line-height: 1.8; margin-bottom: 50px; color: var(--color-text);">
+            Founded in 2007, Find My Career was born out of a passion for education and a commitment to guiding students through the complex process of international university applications. Over the past 17 years, we have successfully assisted thousands of students in securing placements at prestigious universities around the world.
+          </p>
+    
+          <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: var(--color-text);">Our Team</h2>
+          <p style="font-size: 1.15rem; line-height: 1.8; color: var(--color-text);">
+            At the heart of Find My Career is a team of 20 dedicated, highly skilled professionals. Our team brings together a wealth of experience and expertise in international education, university admissions, and student counseling. Each member of our team is committed to providing exceptional service and personalized attention to every student we work with.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section (Black Banner) -->
+    <section style="background: #000; color: #fff; padding: 100px 0; border-top: var(--border-width) solid var(--color-border); border-bottom: var(--border-width) solid var(--color-border); position: relative; overflow: hidden;">
         <div class="container">
-            <div style="display: flex; justify-content: space-around; align-items: center; text-align: center; flex-wrap: wrap; gap: 40px;">
-                
-                <div>
-                    <div style="font-size: 4rem; font-weight: 900; color: var(--color-primary); text-shadow: 4px 4px 0 #fff;">17+</div>
-                    <div style="font-size: 1.2rem; margin-top: 10px;">Years Experience</div>
-                </div>
-
-                <div>
-                    <div style="font-size: 4rem; font-weight: 900; color: var(--color-secondary); text-shadow: 4px 4px 0 #fff;">20+</div>
-                    <div style="font-size: 1.2rem; margin-top: 10px;">Dedicated Experts</div>
-                </div>
-
-                <div>
-                    <div style="font-size: 4rem; font-weight: 900; color: var(--color-tertiary); text-shadow: 4px 4px 0 #fff;">1000s</div>
-                    <div style="font-size: 1.2rem; margin-top: 10px;">Successful Students</div>
-                </div>
-
+          <div style="display: flex; justify-content: space-around; align-items: center; text-align: center; flex-wrap: wrap; gap: 40px;">
+            
+            <!-- Stat 1 -->
+            <div>
+              <div style="position: relative; font-size: 5rem; font-weight: 900; color: #fff; line-height: 1;">
+                <span style="position: absolute; top: 4px; left: 4px; color: #ff0055; z-index: 0; width: 100%;">17+</span>
+                <span style="position: relative; z-index: 1;">17+</span>
+              </div>
+              <div style="font-size: 1.2rem; margin-top: 15px; font-weight: 500;">Years Experience</div>
             </div>
+    
+            <!-- Stat 2 -->
+            <div>
+               <div style="position: relative; font-size: 5rem; font-weight: 900; color: #fff; line-height: 1;">
+                <span style="position: absolute; top: 4px; left: 4px; color: #ffcc00; z-index: 0; width: 100%;">20+</span>
+                <span style="position: relative; z-index: 1;">20+</span>
+              </div>
+              <div style="font-size: 1.2rem; margin-top: 15px; font-weight: 500;">Dedicated Experts</div>
+            </div>
+    
+            <!-- Stat 3 -->
+            <div>
+               <div style="position: relative; font-size: 5rem; font-weight: 900; color: #fff; line-height: 1;">
+                <span style="position: absolute; top: 4px; left: 4px; color: #00ccff; z-index: 0; width: 100%;">1000s</span>
+                <span style="position: relative; z-index: 1;">1000s</span>
+              </div>
+              <div style="font-size: 1.2rem; margin-top: 15px; font-weight: 500;">Successful Students</div>
+            </div>
+    
+          </div>
         </div>
     </section>
 
     <!-- Director's Quote -->
-    <section class="process" style="background: #fff; border-bottom: var(--border-width) solid var(--color-border);">
-        <div class="container" style="text-align: center; max-width: 800px;">
-            <i class="ri-double-quotes-l" style="font-size: 3rem; color: var(--color-primary);"></i>
-            <h3 style="font-size: 1.5rem; margin: 20px 0; font-style: italic;">
-                "In an ever-evolving competitive jobs market, career guidance counseling has emerged as a very important player in the realization of dreams and ambitions. Find My Career is today leading the way in overseas graduate placements with seventeen years of experience and know-how at their fingertips."
-            </h3>
-            <div style="font-weight: 700; font-size: 1.2rem;">- Thinking Forward</div>
+    <section
+      class="process"
+      style="
+        background: #fff;
+        border-bottom: var(--border-width) solid var(--color-border);
+      "
+    >
+      <div class="container" style="text-align: center; max-width: 800px">
+        <i
+          class="ri-double-quotes-l"
+          style="font-size: 3rem; color: var(--color-primary)"
+        ></i>
+        <h3 style="font-size: 1.5rem; margin: 20px 0; font-style: italic">
+          "In an ever-evolving competitive jobs market, career guidance
+          counseling has emerged as a very important player in the realization
+          of dreams and ambitions. Find My Career is today leading the way in
+          overseas graduate placements with seventeen years of experience and
+          know-how at their fingertips."
+        </h3>
+        <div style="font-weight: 700; font-size: 1.2rem">
+          - Thinking Forward
         </div>
+      </div>
     </section>
 
-                <footer class="footer-basket">
+    <footer class="footer-basket">
       <div class="footer-basket-inner">
         <div class="footer-basket-left">
           <div class="footer-brand-row">
@@ -177,42 +440,56 @@
               alt="Find My Career logo"
               class="footer-basket-logo"
             />
+            <p class="footer-blurb">
+              In an ever evolving competitive jobs market career guidance
+              counselling has emerged as a very important player in the
+              realisation of dreams and ambitions sometimes built on sacrifices
+              of immense proportions. Find my career is today leading the way in
+              overseas graduate placements with seventeen years of experience
+              and knowhow at their fingertips.Call us and find out how we could
+              help you in your career path
+            </p>
           </div>
-          <p class="footer-blurb">In an ever evolving competitive jobs market career guidance counselling has <br>  emerged as a very important player in the realisation of dreams and ambitions <br>   sometimes built on sacrifices of immense proportions. Find my career is today<br>leading the way in overseas graduate placements with seventeen years of experience  and know how at their fingertips.</p>
+
           <div class="footer-socials">
-            <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
-            <a href="#" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
-          </div>
-          <div class="footer-copy">
-            Copyright 2025 Find My Career. All Rights Reserved.
+            <a href="#" aria-label="Instagram"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="ri-facebook-fill"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
           </div>
         </div>
         <div class="footer-basket-right">
           <div class="footer-menu">
             <div class="footer-menu-col">
-              <h4>Career Test</h4>
+              <h3>Quick Selection</h3>
               <ul>
                 <li><a href="visa-services.html">Visa Services</a></li>
-                <li><a href="career-path.html">Career Path</a></li>
+                <li><a href="career-path.html">Career Paths</a></li>
                 <li><a href="our-services.html">Our Services</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
               </ul>
             </div>
             <div class="footer-menu-col">
-              <h4>Helpful Links</h4>
+              <h3>Helpful Links</h3>
               <ul>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms &amp; Conditions</a></li>
               </ul>
             </div>
-                        <div class="footer-menu-col stay-connected">
-              <h4>Stay Connected with Us</h4>
-                            <ul class="footer-contact-list">
+            <div class="footer-menu-col stay-connected">
+              <h3>Stay Connected with Us</h3>
+              <ul class="footer-contact-list">
                 <li>
                   <i class="ri-map-pin-2-fill"></i>
                   <span>No. 18, Beltona Lane, Colombo - 04 Sri Lanka</span>
+                  <br />
+                  <span>4DeMontfort Street, 2nd Floor Leicester LE1 7GA</span>
                 </li>
                 <li>
                   <i class="ri-phone-fill"></i>
@@ -226,113 +503,15 @@
                   <i class="ri-mail-open-fill"></i>
                   <span>info@findmycareer.org.uk</span>
                 </li>
-                <li>
-                  <i class="ri-timer-2-fill"></i>
-                  <span>Mon to Fri - 10:00am to 6:00pm Sat - 10.00am to 2.00pm (Sunday Closed)</span>
-                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </footer>
-<section class="footer-duplicate">
-  <div class="footer-duplicate-inner">
-    <div class="footer-duplicate-left">
-      <div class="footer-duplicate-brand">
-        <div class="footer-duplicate-columns">
-          <div class="footer-duplicate-menu">
-            <h4>Career Test</h4>
-            <ul>
-              <li><a href="visa-services.html">Visa Services</a></li>
-              <li><a href="career-path.html">Career Path</a></li>
-              <li><a href="our-services.html">Our Services</a></li>
-              <li><a href="about-us.html">About Us</a></li>
-              <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-          </div>
-          <div class="footer-duplicate-menu footer-duplicate-stay">
-            <h4>Stay Connected with Us</h4>
-            <ul class="footer-contact-list">
-              <li>
-                <i class="ri-map-pin-line"></i>
-                <span>No. 18, Beltona Lane, Colombo - 04 Sri Lanka</span>
-              </li>
-              <li>
-                <i class="ri-phone-line"></i>
-                <span>+94 117 221 192</span>
-              </li>
-              <li>
-                <i class="ri-global-line"></i>
-                <span>findmycareer.org.uk</span>
-              </li>
-              <li>
-                <i class="ri-mail-line"></i>
-                <span>info@findmycareer.org.uk</span>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-duplicate-menu">
-            <h4>Helpful Links</h4>
-            <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Terms &amp; Conditions</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <div class="footer-copy-row">
+      Copyright 2025 Find My Career. All Rights Reserved.
     </div>
-    <div class="footer-duplicate-right">
-      <div class="footer-duplicate-grid">
-        <div class="footer-duplicate-col"></div>
-        <div class="footer-duplicate-col"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
+
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
